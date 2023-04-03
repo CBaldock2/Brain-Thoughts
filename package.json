@@ -1,0 +1,24 @@
+{
+  "name": "social-network",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CBaldock2/Social-Network.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CBaldock2/Social-Network/issues"
+  },
+  "homepage": "https://github.com/CBaldock2/Social-Network#readme",
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.2"
+  }
+}

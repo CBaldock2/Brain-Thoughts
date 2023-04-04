@@ -16,7 +16,20 @@ module.exports = {
             .catch((err) => res.status(500).json(err));
     },
     createThought(req, res) {
-
+        Thought.create(req.body)
+            .then((thought) => {
+                return User.findOneAndUpdate(
+                    { _id: req.body.userId },
+                    { $addToSet: { thoughts: thoughtId } },
+                    { new: true }
+                );
+            })
+            .then((user) =>
+                !user
+                    ? res.status(404).json({ message: 'Thought was created from no brain!' })
+                    : res.json('Had a Thought!')
+            )
+            .catch((err) => res.status(500).json(err));
     },
     updateThought(req, res) {
 

@@ -31,7 +31,13 @@ thoughtSchema
     .virtual('reactionCount')
     .get(function () {
         return this.reactions.length
-    })
+    });
+
+thoughtSchema
+    .virtual('formatCreatedAt')
+    .get(function () {
+        return new Date(this.createdAt).toLocaleDateString();
+    });
 
 const Thought = model('thought', thoughtSchema);
 

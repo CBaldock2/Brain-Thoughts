@@ -16,11 +16,11 @@
   
   ## Description
   <a name= 'description'></a>
-  Brain Thought is a social network application...
+  Brain Thought is a social network application where you can create a Thought! A user, or Brain, is able to create a Thought, delete a Thought or update a thought, as well as being able to react to Thoughts. They can also add and remove friends.
 
   ## Installation
   <a name= 'installation'></a>
-  npm i
+   To run the application run "npm i" in the terminal.
 
   ## Usage
   <a name= 'usage'></a>
